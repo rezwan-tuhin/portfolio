@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import Aboutme from "./components/Aboutme";
 import MyServices from "./components/MyServices";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Aboutme />
       <MyServices />
       <Portfolio />
+      <Footer />
     </main>
   );
 }

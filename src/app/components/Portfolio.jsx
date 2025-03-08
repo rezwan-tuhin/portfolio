@@ -4,7 +4,7 @@ import frontend from '../../../assets/frontend.png'
 
 function Portfolio() {
     return (
-        <div id='portfolio' className='flex flex-col items-center mt-40 mb-40'>
+        <div id='portfolio' className='flex flex-col items-center mt-40'>
             <div className='flex flex-col items-center'>
                 <h4 className='text-[24px] text-[rgb(36,36,36)] text-center leading-[27px]'>My portfolio</h4>
                 <h1 className='text-[60px] text-[#242424] text-center leading-[68px]'>My latest work</h1>
