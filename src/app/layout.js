@@ -14,7 +14,7 @@ const ovo = Ovo({
   weight: '400', 
   subsets: ["latin"],
 });
-const outfit = Outfit({
+export const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-outfit',
 });
