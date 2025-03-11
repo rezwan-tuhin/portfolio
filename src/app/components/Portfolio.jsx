@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import frontend from '../../../assets/frontend.png'
+import { outfit } from '../layout'
 
 function Portfolio() {
     return (
@@ -16,21 +17,21 @@ function Portfolio() {
                 <div className='flex flex-col mt-10'>
                     <Image src={frontend} alt='' width={300} className='rounded-2xl' />
                     <div className='relative w-[250px] h-[83px] bottom-28 left-8 bg-white rounded-xl flex flex-col gap-y-1 p-4'>
-                        <h2 className='text-[18px] text-[#2A2A2A] font-bold'>dApp Project</h2>
+                        <h2 className={`text-[18px] text-[#2A2A2A] ${outfit.className}`}>dApp Project</h2>
                         <p className='text-[16px] text-[#5E5E5E]'>Blockchain</p>
                     </div>
                 </div>
                 <div className='flex flex-col mt-10'>
                     <Image src={frontend} alt='' width={300} className='rounded-2xl' />
                     <div className='relative w-[250px] h-[83px] bottom-28 left-8 bg-white rounded-xl flex flex-col gap-y-1 p-4'>
-                        <h2 className='text-[18px] text-[#2A2A2A]'>dApp Project</h2>
+                        <h2 className={`text-[18px] text-[#2A2A2A] ${outfit.className}`}>dApp Project</h2>
                         <p className='text-[16px] text-[#5E5E5E]'>Blockchain</p>
                     </div>
                 </div>
                 <div className='flex flex-col mt-10'>
                     <Image src={frontend} alt='' width={300} className='rounded-2xl' />
                     <div className='relative w-[250px] h-[83px] bottom-28 left-8 bg-white rounded-xl flex flex-col gap-y-1 p-4'>
-                        <h2 className='text-[18px] text-[#2A2A2A]'>dApp Project</h2>
+                        <h2 className={`text-[18px] text-[#2A2A2A] ${outfit.className}`}>dApp Project</h2>
                         <p className='text-[16px] text-[#5E5E5E]'>Blockchain</p>
                     </div>
                 </div>

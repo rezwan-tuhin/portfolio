@@ -1,10 +1,12 @@
+'use client'
 import React from 'react'
+import { easeOut, motion } from 'framer-motion'
 import Image from 'next/image'
 import tuhin from '../../../assets/tuhin.jpg'
 
 function HeroSection() {
     return (
-        <div className='flex flex-col items-center bg-white mt-40'>
+        <motion.div initial={{opacity:0, scale:0.8}} whileInView={{opacity:1, scale:1}} transition={{delay:0.3, duration: 0.6, ease: easeOut}} viewport={{once:true}} className='flex flex-col items-center bg-white mt-40'>
             <Image src={tuhin} alt='' className='rounded-full' width={158} height={158} />
             <p className='text-[28px] pt-4 text-center pb-8'>Hi! I'm Rezwan Tuhin</p>
             <h1 className='text-[80px] text-[#191919] text-center w-[847px] leading-none'>Full Stack dApp Developer</h1>
@@ -15,7 +17,7 @@ function HeroSection() {
                 <button className='flex justify-between bg-[#202020] text-white px-7 py-3 border-2 border-[#202020] rounded-4xl text-[18px] hover:bg-white hover:border-2 hover:border-[#202020] hover:text-[#202020] transition-[0.3s] cursor-pointer'>connect with me</button>
                 <button className='flex justify-between border-2 border-[#252525] px-12 py-3 rounded-4xl text-[18px] text-[#202020] hover:bg-[#dddddd] cursor-pointer transition-[0.3s]'>my resume</button>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

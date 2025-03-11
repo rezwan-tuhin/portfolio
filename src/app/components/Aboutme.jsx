@@ -1,12 +1,14 @@
+'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 import code from '../../../assets/code.png'
 import education from '../../../assets/education.png'
 import briefcase from '../../../assets/briefcase.png'
 
 function Aboutme() {
     return (
-        <div id='aboutme' className='flex flex-col items-center w-full pt-40'>
+        <motion.div initial={{opacity:0, y: 20}} whileInView={{opacity:1, y:0}} transition={{delay:0.3, duration:0.6, ease: "easeOut"}} id='aboutme' className='flex flex-col items-center w-full pt-40'>
             <h3 className='text-[24px] text-[#242424] leading-[27px]'>Introduction</h3>
             <h1 className='text-[60px] text-[#242424] leading-[68px]'>About me</h1>
             <div className='flex justify-between px-4 space-x-12 max-w-8/12'>
@@ -36,8 +38,8 @@ function Aboutme() {
                         <p className='text-[15px] text-[#797979]'>Built more than 5 projects</p>
                     </div>
                 </div>
-        </div>
+        </motion.div>
     )
 }
 
-export default Aboutme
+export default Aboutme;
